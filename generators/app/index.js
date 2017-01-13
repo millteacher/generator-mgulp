@@ -25,7 +25,7 @@ module.exports = yeoman.Base.extend({
   install: function () {
 
     this.spawnCommandSync('cnpm',['init']); 
-    this.spawnCommandSync('cnpm',['install','gulp','mem-fs-editor','mem-fs','--save-dev']);
+    this.spawnCommandSync('cnpm',['install','gulp','mill-gulp-utils','--save-dev']);
     this.spawnCommand('gulp',['demo']);
  
 
